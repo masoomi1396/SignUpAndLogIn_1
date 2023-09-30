@@ -2136,6 +2136,18 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-\[\] {
+  opacity: ;
+}
+
+.opacity-\[0\.\] {
+  opacity: 0.;
+}
+
+.opacity-\[0\.5\] {
+  opacity: 0.5;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }

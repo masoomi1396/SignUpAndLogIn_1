@@ -51,6 +51,22 @@ signUpTab.addEventListener("click",(event)=>{
 })
 inputsOfForm.forEach((input,i)=>{
     input.addEventListener("focus",()=>{
+        labelsOfForm.forEach((label,i)=>{
+            if(inputsOfForm[i].value == null || inputsOfForm[i].value == "")
+            {
+                label.classList.add('text-2xl');
+                label.classList.add('text-color-gray-text');
+                label.classList.remove('text-lg');
+                label.classList.remove('text-white');
+                label.classList.remove('transition');
+                label.classList.remove('duration-300');
+                label.classList.remove('translate-y-12');
+                label.classList.remove('opacity-[0.5]')
+            }
+            else{
+                label.classList.add('opacity-[0.5]')
+            }
+        })
         labelsOfForm[i].classList.remove('text-2xl');
         labelsOfForm[i].classList.remove('text-color-gray-text');
         labelsOfForm[i].classList.add('text-lg');
