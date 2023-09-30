@@ -58,8 +58,6 @@ inputsOfForm.forEach((input,i)=>{
                 label.classList.add('text-color-gray-text');
                 label.classList.remove('text-lg');
                 label.classList.remove('text-white');
-                label.classList.remove('transition');
-                label.classList.remove('duration-300');
                 label.classList.remove('translate-y-12');
                 label.classList.remove('opacity-[0.5]')
             }
@@ -69,6 +67,7 @@ inputsOfForm.forEach((input,i)=>{
         })
         labelsOfForm[i].classList.remove('text-2xl');
         labelsOfForm[i].classList.remove('text-color-gray-text');
+        labelsOfForm[i].classList.remove('opacity-[0.5]');
         labelsOfForm[i].classList.add('text-lg');
         labelsOfForm[i].classList.add('text-white');
         labelsOfForm[i].classList.add('transition');
@@ -76,5 +75,3 @@ inputsOfForm.forEach((input,i)=>{
         labelsOfForm[i].classList.add('translate-y-12');
     })
 })
-
-
