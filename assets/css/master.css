@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.animationClass{
+    animation-name: boxAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+label{
+    pointer-events: none;
+}
+@keyframes boxAnimation{
+    0%{opacity: 0.1;}
+    100%{opacity: 1;}
+}

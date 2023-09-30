@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Page</title>
+    <link rel="stylesheet" href="assets/css/input.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <main class="bg-color-of-background h-screen w-screen">
+        <section class="container mx-auto py-20">
+            <form class="w-full md:w-3/5 space-y-10 shadow-lg shadow-black bg-color-blue-gray rounded-md grid place-items-center p-10 mx-auto">
+                <div class="flex justify-center flex-nowrap w-full text-2xl">
+                    <button id="signUpTab" class="w-1/2 py-5 text-center bg-color-blue-green text-white capitalize">sign up</button>
+                    <button id="logInTab" class="w-1/2 py-5 text-center bg-color-gray-background text-color-gray-text capitalize">log in</button>
+                </div>
+                <div id="signUpBodyForm" class="flex flex-wrap gap-y-10 ">
+                    <h2 class="w-full capitalize font-bold text-white text-4xl text-center">Sign Up for free</h2>
+                    <div class="w-full flex flex-nowrap gap-x-5">
+                        <div class="w-1/2 relative  ">
+                            <label class="absolute text-color-gray-text top-3 left-4 capitalize text-2xl">
+                                first name
+                            </label>
+                            <input type="text" class="w-full border border-color-of-background py-3 pl-5 focus:outline-none focus:border-color-blue-green bg-inherit text-white text-xl">
+                        </div>
+                        <div class="w-1/2 relative">
+                            <label class="absolute text-color-gray-text top-3 left-4 capitalize text-2xl">
+                                last name
+                            </label>
+                            <input type="text" class="w-full border border-color-of-background py-3 pl-5 focus:outline-none focus:border-color-blue-green bg-inherit text-white text-xl">
+                        </div>
+                    </div>
+                    <div class="w-full relative">
+                        <label class="absolute text-color-gray-text top-3 left-4 capitalize text-2xl">
+                            email
+                        </label>
+                        <input type="email" class="w-full border border-color-of-background py-3 pl-5 focus:outline-none focus:border-color-blue-green bg-inherit text-white text-xl">
+                    </div>
+                    <div class="w-full relative">
+                        <label class="absolute  text-color-gray-text top-3 left-4 capitalize text-2xl">
+                            set a password
+                        </label>
+                        <input type="password" class="w-full  border border-color-of-background py-3 pl-5 focus:outline-none focus:border-color-blue-green bg-inherit text-white text-2xl">
+                    </div>
+                    <div class="w-full">
+                        <button id="signUpButton" type="submit" class="text-white w-full py-5 font-bold leading-relaxed text-4xl uppercase text-center bg-color-blue-green transition duration-300 cursor-default hover:bg-color-of-button-hover">get started</button>
+                    </div>
+                </div>
+                <div id="logInBodyForm" class="hidden flex-wrap gap-y-10 relative">
+                    <h2 class="w-full capitalize font-bold text-white text-4xl text-center">welcome back!</h2>
+                    <div class="w-full relative">
+                        <label class="absolute text-color-gray-text top-3 left-4 capitalize text-2xl">
+                            email
+                        </label>
+                        <input type="email" class="w-full border border-color-of-background py-3 pl-5 focus:outline-none focus:border-color-blue-green bg-inherit text-white text-xl">
+                    </div>
+                    <div class="w-full relative">
+                        <label class="absolute  text-color-gray-text top-3 left-4 capitalize text-2xl">
+                            password
+                        </label>
+                        <input type="password" class="w-full  border border-color-of-background py-3 pl-5 focus:outline-none focus:border-color-blue-green bg-inherit text-white text-2xl">
+                    </div>
+                    <div class="w-full relative">
+                        <a href="#" class="absolute -top-8 text-lg text-color-blue-green hover:text-color-of-button-hover tranistion duration-300 capitalize right-0">forget password?</a>
+                        <button id="logInButton" type="submit" class="text-white w-full py-5 font-bold leading-relaxed text-4xl uppercase text-center bg-color-blue-green transition duration-300 cursor-default hover:bg-color-of-button-hover">log in</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
